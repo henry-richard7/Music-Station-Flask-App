@@ -106,7 +106,7 @@ def play():
 
      if check_audio(mp3_urls) == 403 :
          encrypted_url = convert_to_json[songID]['encrypted_media_url']
-         mp3_url = decrypt_url(encrypted_url).replace('aac','h')
+         mp3_url = decrypt_url(encrypted_url).replace('mp3','mp4')
 
      else:
 
