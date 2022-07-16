@@ -160,7 +160,7 @@ def search_song():
     r = requests.get(url).json()["results"]
     for i in range(len(r)):
         songIDs.append(r[i]["id"])
-        images.append(r[i]["image"].replace("150x150", "250x250"))
+        images.append(r[i]["image"].replace("150x150", "500x500"))
         songs_titles.append(r[i]["title"])
         songs_subtitles.append(r[i]["subtitle"])
         years.append(r[i]["year"])
@@ -193,7 +193,7 @@ def Album_Search():
     for i in range(len(r)):
         AlbumIDs.append(r[i]["id"])
         titles.append(html.unescape(r[i]["title"]))
-        images.append(r[i]["image"].replace("50x50", "250x250"))
+        images.append(r[i]["image"].replace("50x50", "500x500"))
         years.append(r[i]["more_info"]["year"])
         musics.append(r[i]["music"])
 
